@@ -3,8 +3,7 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-## LIBRARY
-
+### LIBRARY
 ```{r}
 library("kernlab") 
 library("caret") 
@@ -17,7 +16,7 @@ library("xlsx")
 
 ```
 
-
+###
 ```{r}
 data = read_excel("DATA.xlsx")
 
@@ -82,11 +81,11 @@ print(con.matrix)
 ```{r}
 
 
-October = read_excel("C:/Users/cryov/OneDrive/Desktop/BUS 439/EB/Test Separate Rows.xlsx")
+October = read_excel("DATA.xlsx")
 October = October[,2]
 
 
-#data = read_excel("/Users/prashantbhatnagar/Desktop/3-Pio R Scripts/DD-Survey-April-Separate-Rows.xlsx")
+#data = read_excel("DATA.xlsx")
 
 #data = data[,c(-1,-4)]
 
@@ -94,7 +93,7 @@ colnames(October) <- c("text")
 October$text = as.factor(October$text)
 
 
-data = read_excel("C:/Users/cryov/OneDrive/Desktop/BUS 439/EB/Combined ALL (Categorized).xlsx")
+data = read_excel("DATA.xlsx")
 
 data = data[,c(-1,-4,-5)]
 
