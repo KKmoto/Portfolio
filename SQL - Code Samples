@@ -1,0 +1,10 @@
+
+CREATE TABLE employee(
+    EmployeeID INT(25) AUTO_INCREMENT,
+    EmployeeName VARCHAR(100) NOT NULL,
+    BirthDate DATE,
+    POSITION VARCHAR(25),
+    ManagerID INT(25) DEFAULT NULL,
+    PRIMARY KEY(EmployeeID),
+    FOREIGN KEY(ManagerID) REFERENCES employee(EmployeeID)
+);
