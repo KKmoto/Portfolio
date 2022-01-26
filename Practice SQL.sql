@@ -31,11 +31,16 @@ SELECT man.EmployeeName AS "Manager Name"
 FROM Employee AS man
 	,employee AS WORK
 WHERE man.employeeID = WORK.managerid
-GROUP BY man.employeeID;SELECT SubscriptionType
+GROUP BY man.employeeID;
+
+SELECT SubscriptionType
 	,ProductName
 	,Price
 FROM Subscription s LEFT JOIN Product p ON s.ProductID = p.ProductID
-GROUP BY price DESC SELECT a.customer_ID AS CustomerX
+GROUP BY price DESC 
+
+
+SELECT a.customer_ID AS CustomerX
 	,b.customer_ID AS CustomerY
 	,count(a.film_id) AS nOfOverlappingMovies
 FROM (
@@ -66,7 +71,6 @@ GROUP BY CustomerX
 ORDER BY nOfOverlappingMovies DESC;
 
 
-
 -------- Video game sales data queries 
 
 --Best selling games on the Wii: 
@@ -76,7 +80,8 @@ SELECT name
 	,CAST(Global_Sales AS INT) AS totalsales
 FROM PortfolioProject.dbo.vgsales v
 WHERE Platform = 'Wii'
-ORDER BY totalsales DESC;
+ORDER BY totalsales DESC;
+
 
 --Best selling games in North America, which aren't nintendo games:
 
