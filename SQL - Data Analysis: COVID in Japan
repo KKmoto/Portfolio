@@ -147,5 +147,4 @@ FROM Japan_Totals JPtotal
 		inner JOIN 
 	OneVaccinatedRunningTotal Vac
 		on JPtotal.Date = Vac.Date 
---ORDER BY TotalPopulationVaccinatedPercentage DESC
 
